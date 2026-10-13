@@ -4,9 +4,13 @@
 
 ## 目前有的 skill
 
+所有 skill 都放在 [`skills/`](skills/) 文件夹里，每个 skill 一个小文件夹。
+
+### 知识类
+
 | skill | 干什么 |
 |---|---|
-| [science-explainer（科普知识讲解员）](science-explainer/SKILL.md) | 什么知识都能问。先联网查百科、教科书、权威机构报告，再用大白话和生活比喻讲明白；每条说法都标出处，权威来源说法不一致时分别列出、不评对错。 |
+| [science-explainer（科普知识讲解员）](skills/science-explainer/SKILL.md) | 什么知识都能问。先联网查百科、教科书、权威机构报告，再用大白话和生活比喻讲明白；每条说法都标出处，权威来源说法不一致时分别列出、不评对错。 |
 
 ## 怎么安装
 
@@ -26,17 +30,17 @@ npx skills add 2763945400-ctrl/my-skills --skill science-explainer
 
 ### 方法二：手动复制（Claude Code）
 
-把 `science-explainer` 整个文件夹复制到：
+把 `skills` 里你想要的 skill 文件夹（比如 `skills/science-explainer`）整个复制到：
 - Windows：`C:\Users\你的用户名\.claude\skills\`
 - Mac / Linux：`~/.claude/skills/`
 
 ### 方法三：Claude 网页版 / 桌面版
 
-把 `science-explainer` 文件夹压缩成 zip，在 Claude 的设置里找到 Skills（技能）页面上传。
+把 `skills` 里你想要的 skill 文件夹（比如 `skills/science-explainer`）压缩成 zip，在 Claude 的设置里找到 Skills（技能）页面上传。
 
 ### 其他不支持 skill 的 AI
 
-打开 [science-explainer/SKILL.md](science-explainer/SKILL.md)，把 `---` 下面的正文复制下来，粘贴到对话开头或 AI 的“自定义指令”里。效果会差一些。
+打开对应 skill 的 SKILL.md（比如 [skills/science-explainer/SKILL.md](skills/science-explainer/SKILL.md)），把 `---` 下面的正文复制下来，粘贴到对话开头或 AI 的“自定义指令”里。效果会差一些。
 
 ## 用起来是什么样
 
